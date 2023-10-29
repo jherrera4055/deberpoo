@@ -1,21 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.mycompany.deberpoo;
+import java.util.Scanner;
 
-/**
- *
- * @author LENOVO
- */
 public class ClasePrincipal {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner entrada = new Scanner(System.in);
+        ManejadorInteracciones manejadorInteracciones = new ManejadorInteracciones();
+        RastreadorRendimiento rastreadorRendimiento = new RastreadorRendimiento();
+
+        manejadorInteracciones.mostrarMensaje("Elige el nivel de dificultad (1, 2, ...): ");
+        int nivelDificultad = entrada.nextInt();
+
+        manejadorInteracciones.mostrarMensaje("Elige el tipo de problema aritmético (1: Suma, 2: Resta, 3: Multiplicación, 4: División, 5: Aleatorio): ");
+        int tipoProblema = entrada.nextInt();
+        
+
     }
-    
 }
+
