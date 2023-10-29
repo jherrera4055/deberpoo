@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.mycompany.deberpoo;
-
-/**
- *
- * @author LENOVO
- */
 public class RastreadorRendimiento {
-    
+    private int aciertos;
+    private int intentos;
+
+    public RastreadorRendimiento() {
+        this.aciertos = 0;
+        this.intentos = 0;
+    }
+
 }
+
